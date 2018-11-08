@@ -19,7 +19,7 @@ metadata:
   name: kubescope-cli-example
 spec:
   containers:
-  - image: hharnisc/kube-scope-cli:hh-test-01
+  - image: hharnisc/kube-scope-cli:03d23d083af952610b7e8e74d9873d9b9ec6bb34
     name: kubescope-cli-example
     stdin: true
     tty: true
