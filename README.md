@@ -2,7 +2,7 @@
 
 Kubescope on the command line
 
-![Kubescope CLI](https://github.com/hharnisc/kubescope/raw/master/kubescope-cli.gif)
+![Kubescope CLI](https://github.com/hharnisc/kubescope-cli/raw/master/kubescope-cli.gif)
 
 ## Usage
 
