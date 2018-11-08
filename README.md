@@ -2,6 +2,8 @@
 
 Kubescope on the command line
 
+![Kubescope CLI](https://github.com/hharnisc/kubescope/raw/master/kubescope-cli.gif)
+
 ## Usage
 
 Kubescope CLI can be used in Kubernetes or locally because it connects to the docker socket to collect stats.
@@ -40,7 +42,7 @@ spec:
 
 ### Locally
 
-Kubescope cli can be used locally and connects to the docker socket to collect stats
+Kubescope CLI can be used locally and connects to the docker socket to collect stats
 
 ```sh
 MATCH_NAME=.*my_app.* npm start
