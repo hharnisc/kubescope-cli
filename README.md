@@ -40,6 +40,14 @@ spec:
     # kubernetes.io/hostname: minikube
 ```
 
+Attach to the running container:
+
+```sh
+kubectl attach -it kubescope-cli-example
+```
+
+Observe graphs and the detatch with escape sequence `Ctrl+P` followed by `Ctrl+Q`
+
 ### Locally
 
 Kubescope CLI can be used locally and connects to the docker socket to collect stats
