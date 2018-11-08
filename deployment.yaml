@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: kubescope-example
+spec:
+  containers:
+  - image: hharnisc/kube-scope-cli:hh-test-01
+    name: kubescope-cli-example
+    stdin: true
+    tty: true
+    volumeMounts:
+    - mountPath: /var/run/docker.sock
+      name: docker-sock-volume
+    env:
+    - name: MATCH_NAME
+      value: ".*test-server.*"
+    # - name: DOCKER_SOCKET
+    #   value: /var/run/docker.sock
+  volumes:
+  - name: docker-sock-volume
+    hostPath:
+      path: /var/run/docker.sock
+  # pin kubescope to a specific node
+  # nodeSelector:
+    # kubernetes.io/hostname: minikube

@@ -1,0 +1,21 @@
+{
+  "name": "kubescope-cli",
+  "version": "0.0.1",
+  "description": "A microscope for your kubernetes services",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "hharnisc@gmail.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hharnisc/kubescope.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@hharnisc/docker-stats": "0.9.0-beta-01",
+    "node-docker-api": "^1.1.22",
+    "through2": "^2.0.3",
+    "@hharnisc/turtle-race": "1.0.8-beta-04"
+  }
+}
