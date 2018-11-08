@@ -1,4 +1,4 @@
-# kubescope-cli
+# Kubescope CLI
 
 Kubescope on the command line
 
