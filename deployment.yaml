@@ -14,6 +14,15 @@ spec:
     env:
     - name: MATCH_NAME
       value: ".*test-server.*"
+    # (optional) match on a specific docker image
+    # - name: MATCH_IMAGE
+    #   value: ".*my-image.*"
+    # (optional) skip with a specific name
+    # - name: SKIP_NAME
+    #   value: ".*POD.*"
+    # (optional) skip with a specific docker image
+    # - name: SKIP_IMAGE
+    #   value: ".*POD.*"
     # - name: DOCKER_SOCKET
     #   value: /var/run/docker.sock
   volumes:

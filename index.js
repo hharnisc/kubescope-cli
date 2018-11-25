@@ -24,6 +24,12 @@ turtle.message('Waiting For Stats...')
 stats({
   statsinterval: parseInt(process.env.STATS_INTERVAL || 1, 10),
   matchByName: new RegExp(process.env.MATCH_NAME),
+  matchByImage: process.env.MATCH_IMAGE ?
+    new RegExp(process.env.MATCH_IMAGE) : undefined,
+  skipByName: process.env.SKIP_NAME ?
+    new RegExp(process.env.SKIP_NAME) : undefined,
+  skipByImage: process.env.SKIP_IMAGE ?
+    new RegExp(process.env.SKIP_IMAGE) : undefined,
 }).pipe(through.obj((container, enc, cb) => {
     const cpuPercent = container.stats.cpu_stats.cpu_usage.cpu_percent
     const memoryPercent = (container.stats.memory_stats.usage / container.stats.memory_stats.limit) * 100;
