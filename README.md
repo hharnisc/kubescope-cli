@@ -29,6 +29,12 @@ spec:
     env:
     - name: MATCH_NAME
       value: ".*my-app.*"
+    - name: SKIP_NAME
+      value: ".*POD.*"
+    # - name: MATCH_IMAGE
+    #   value: ".*my-image.*"
+    # - name: SKIP_IMAGE
+    #   value: ".*some-image.*"
     # - name: DOCKER_SOCKET
     #   value: /var/run/docker.sock
   volumes:
