@@ -3,6 +3,8 @@ var through = require('through2')
 var tr = require('@hharnisc/turtle-race')
 const { stdin } = require('ttys')
 
+const emptyStatsMessage = 'Waiting For Stats...'
+
 const turtle = tr({
   input: stdin,
   metrics: {
@@ -16,9 +18,12 @@ const turtle = tr({
       displayMetric: true,
       metricFmt: (metric) => `${metric.toFixed(2)}%`,
     },
-  }
+  },
+  pruneStale: true,
+  pruneInterval: 5,
+  emptyStatsMessage,
 })
-turtle.message('Waiting For Stats...')
+turtle.message(emptyStatsMessage)
 
 
 stats({
